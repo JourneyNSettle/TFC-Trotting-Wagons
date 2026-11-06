@@ -50,6 +50,24 @@ neoForge {
     }
 }
 
+repositories {
+    exclusiveContent {
+        forRepository { maven { url = 'https://api.modrinth.com/maven' } }
+        filter { includeGroup('maven.modrinth') }
+    }
+    maven {
+        name = 'GeckoLib'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content { includeGroup('software.bernie.geckolib') }
+    }
+}
+
+dependencies {
+    compileOnly 'maven.modrinth:terrafirmacraft:4.2.13'
+    compileOnly 'software.bernie.geckolib:geckolib-neoforge-1.21.1:4.8.3'
+    compileOnly files("${System.getenv('USERPROFILE')}/Documents/GitHub/Trotting-Wagons-Extended/build/classes/java/main")
+}
+
 processResources {
     var replaceProperties = [
             "mod_id"                  : mod_id,

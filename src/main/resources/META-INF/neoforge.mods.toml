@@ -40,3 +40,28 @@ license="${mod_license}"
     versionRange="[4.2.6,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="tfc_items"
+    type="required"
+    mandatory=true
+    versionRange="[1.2.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="tfc_metal_tools"
+    type="required"
+    mandatory=true
+    versionRange="[1.0.5,)"
+    ordering="AFTER"
+    side="BOTH"
+
+# GeckoLib and BoneHitboxLib are required by trotting_wagons, so they stay on that mod.
+[[dependencies.${mod_id}]]
+    modId="afc"
+    type="optional"
+    mandatory=false
+    versionRange="[2.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
