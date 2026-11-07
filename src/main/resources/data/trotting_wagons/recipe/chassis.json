@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SLS",
+    "TAM",
+    "SLS"
+  ],
+  "key": {
+    "S": { "item": "minecraft:stick" },
+    "L": { "tag": "trotting_wagons:long_sticks" },
+    "A": { "tag": "trotting_wagons:axles" },
+    "T": { "tag": "trotting_wagons:string" },
+    "M": { "tag": "trotting_wagons:glue" }
+  },
+  "result": { "id": "trotting_wagons:chassis" }
+}

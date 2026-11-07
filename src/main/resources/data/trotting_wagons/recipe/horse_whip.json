@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  S",
+    " SR",
+    "S K"
+  ],
+  "key": {
+    "S": { "item": "minecraft:stick" },
+    "R": { "tag": "trotting_wagons:rope" },
+    "K": { "item": "tfc_items:leather_strap" }
+  },
+  "result": { "id": "trotting_wagons:horse_whip" }
+}

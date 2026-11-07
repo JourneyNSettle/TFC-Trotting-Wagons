@@ -1,0 +1,13 @@
+{
+  "type": "tfc_trotting_wagons:wheel_repair",
+  "wheel": {
+    "id": "trotting_wagons:wheel",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 100
+    }
+  },
+  "material": { "tag": "tfc:lumber" },
+  "fastener": { "tag": "c:nails/handful/black_steel" },
+  "restore": 100
+}

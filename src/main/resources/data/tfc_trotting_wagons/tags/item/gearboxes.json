@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#tfc:gear_boxes",
+    { "id": "afc:wood/gear_box/araucaria", "required": false },
+    { "id": "afc:wood/gear_box/baobab", "required": false },
+    { "id": "afc:wood/gear_box/beech", "required": false },
+    { "id": "afc:wood/gear_box/cypress", "required": false },
+    { "id": "afc:wood/gear_box/eucalyptus", "required": false },
+    { "id": "afc:wood/gear_box/fig", "required": false },
+    { "id": "afc:wood/gear_box/ginkgo", "required": false },
+    { "id": "afc:wood/gear_box/hevea", "required": false },
+    { "id": "afc:wood/gear_box/ipe", "required": false },
+    { "id": "afc:wood/gear_box/ironwood", "required": false },
+    { "id": "afc:wood/gear_box/mahoe", "required": false },
+    { "id": "afc:wood/gear_box/mahogany", "required": false },
+    { "id": "afc:wood/gear_box/teak", "required": false },
+    { "id": "afc:wood/gear_box/tualang", "required": false }
+  ]
+}

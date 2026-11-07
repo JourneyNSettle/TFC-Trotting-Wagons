@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#c:chests/wooden"
+  ],
+  "remove": [
+    "#c:chests/trapped"
+  ]
+}

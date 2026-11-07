@@ -1,0 +1,9 @@
+{
+  "values": [
+    "tfc_items:leather_strap",
+    {
+      "id": "textile:cotton_string",
+      "required": false
+    }
+  ]
+}

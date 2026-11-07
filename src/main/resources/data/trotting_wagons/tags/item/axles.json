@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#tfc:axles",
+    { "id": "afc:wood/axle/araucaria", "required": false },
+    { "id": "afc:wood/axle/baobab", "required": false },
+    { "id": "afc:wood/axle/beech", "required": false },
+    { "id": "afc:wood/axle/cypress", "required": false },
+    { "id": "afc:wood/axle/eucalyptus", "required": false },
+    { "id": "afc:wood/axle/fig", "required": false },
+    { "id": "afc:wood/axle/ginkgo", "required": false },
+    { "id": "afc:wood/axle/hevea", "required": false },
+    { "id": "afc:wood/axle/ipe", "required": false },
+    { "id": "afc:wood/axle/ironwood", "required": false },
+    { "id": "afc:wood/axle/mahoe", "required": false },
+    { "id": "afc:wood/axle/mahogany", "required": false },
+    { "id": "afc:wood/axle/teak", "required": false },
+    { "id": "afc:wood/axle/tualang", "required": false }
+  ]
+}

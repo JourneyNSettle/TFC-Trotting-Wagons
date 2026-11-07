@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LSL",
+    "SMS",
+    "LSL"
+  ],
+  "key": {
+    "L": { "tag": "tfc:lumber" },
+    "S": { "item": "minecraft:stick" },
+    "M": { "item": "tfc:brass_mechanisms" }
+  },
+  "result": {
+    "id": "trotting_wagons:wheel",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 100
+    }
+  }
+}

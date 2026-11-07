@@ -1,0 +1,13 @@
+{
+  "type": "tfc_trotting_wagons:wheel_repair",
+  "wheel": {
+    "id": "trotting_wagons:reinforced_wheel",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 300
+    }
+  },
+  "material": { "tag": "c:rods/wrought_iron" },
+  "fastener": { "tag": "c:screws/handful/wrought_iron" },
+  "restore": 80
+}

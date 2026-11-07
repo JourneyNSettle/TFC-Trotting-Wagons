@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ASA",
+    "ATA",
+    "A A"
+  ],
+  "key": {
+    "A": { "tag": "trotting_wagons:axles" },
+    "S": { "item": "minecraft:saddle" },
+    "T": { "tag": "trotting_wagons:string" }
+  },
+  "result": { "id": "trotting_wagons:shafts" }
+}

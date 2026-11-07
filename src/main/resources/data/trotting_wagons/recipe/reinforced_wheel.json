@@ -1,0 +1,18 @@
+{
+  "type": "tfc_trotting_wagons:counted_shaped",
+  "pattern": [
+    "SRS",
+    "RMR",
+    "SRS"
+  ],
+  "key": {
+    "S": { "tag": "c:sheets/wrought_iron" },
+    "R": { "tag": "c:rods/wrought_iron" },
+    "M": { "item": "tfc:brass_mechanisms" }
+  },
+  "result": {
+    "id": "trotting_wagons:reinforced_wheel",
+    "count": 2,
+    "damage": 300
+  }
+}
