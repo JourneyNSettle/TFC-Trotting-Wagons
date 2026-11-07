@@ -1,0 +1,7 @@
+{
+  "values": [
+    "tfc:wool_cloth",
+    { "id": "textile:cotton_cloth", "required": false },
+    { "id": "textile:linen_cloth", "required": false }
+  ]
+}

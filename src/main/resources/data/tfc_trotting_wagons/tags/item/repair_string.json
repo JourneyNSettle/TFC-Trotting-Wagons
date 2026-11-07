@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:string",
+    "tfc:wool_yarn",
+    "tfc:jute_fiber",
+    { "id": "textile:cotton_string", "required": false },
+    { "id": "textile:flax_fiber", "required": false }
+  ]
+}

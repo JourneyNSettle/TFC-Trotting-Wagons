@@ -2,13 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "  S",
-    " SR",
-    "S K"
+    " HS",
+    "  R",
+    "  K"
   ],
   "key": {
-    "S": { "item": "minecraft:stick" },
-    "R": { "tag": "trotting_wagons:rope" },
+    "H": { "item": "tfc_items:short_wooden_handle" },
+    "S": { "item": "tfc_items:long_stick" },
+    "R": { "item": "tfc:rope" },
     "K": { "item": "tfc_items:leather_strap" }
   },
   "result": { "id": "trotting_wagons:horse_whip" }
