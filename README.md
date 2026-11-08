@@ -1,28 +1,26 @@
 # TFC Trotting Wagons
 
-Private compatibility addon. It lets TerraFirmaCraft livestock pull wagons from Trotting Wagons Extended.
+Compatibility addon for Trotting Wagons Extended on TerraFirmaCraft. Version 0.2.
 
-Minecraft 1.21.1, NeoForge 21.1.248. The mod requires:
+Minecraft 1.21.1, NeoForge 21.1.248. Required:
 
-- Trotting Wagons Extended, a build that reads the entity tag `trotting_wagons:draft_animals`. That mod in turn requires GeckoLib 4.8.3 and BoneHitboxLib 0.3.0, so those jars stay in the mods folder.
-- TerraFirmaCraft 4.2.6 or newer on the 1.21.1 line, because that is when the two camels were added
+- Trotting Wagons Extended 0.9.6 or newer. That jar brings GeckoLib 4.8.3 and BoneHitboxLib 0.3.0, so those two stay in the mods folder.
+- TerraFirmaCraft 4.2.6 or newer on the 1.21.1 line, because that is when the two camels were added.
 
-TFC More Items (`tfc_items`) is optional. When it is installed, its own long stick, nails, screws, and the other parts are used. When it is not, this jar registers those same ids. FirmaLife is optional: its stainless steel nails and screws then repair wheels the same way black steel does. ArborFirmaCraft (`afc` 2.0.0 or newer) is optional. The game still loads without them.
+Optional:
+
+- TFC More Items (`tfc_items`) 1.2.1 or newer. When it is installed, its long stick, nails, screws, and the other parts are used. When it is not, this jar registers those same ids and lists them in a TFC Parts creative tab so JEI can show them.
+- FirmaLife. Stainless steel nails and screws then repair wheels the same way black steel does.
+- ArborFirmaCraft (`afc`) 2.0.0 or newer. Its lumber, axles, and gear boxes count where the TFC wood parts do.
+
+The game still loads without the optional mods.
 
 ## What it does
 
-This jar adds these ids to `trotting_wagons:draft_animals`:
+TFC horses, donkeys, mules, and both camels can pull a wagon. A TFC animal hitches only when its familiarity heart has the white or red outline, which is the familiarity decay limit, 30% unless the TFC config changes it. A vanilla horse still has to be tamed. Babies are refused. The horse, mule, and both camels take a large passenger seat. The donkey stays a small passenger.
 
-- `tfc:horse`
-- `tfc:donkey`
-- `tfc:mule`
-- `tfc:dromedary_camel`
-- `tfc:bactrian_camel`
-
-The same jar adds `tfc:horse`, `tfc:mule`, `tfc:dromedary_camel`, and `tfc:bactrian_camel` to `trotting_wagons:large_wagon_passenger`. They take a large seat, the same way a vanilla horse does. `tfc:donkey` stays a small passenger.
-
-A TerraFirmaCraft animal can be hitched only when its familiarity heart has the white or red outline. That is familiarity at or above the decay limit, 30% unless the TFC config changes it. A vanilla horse still has to be tamed. Babies are refused. Hitch width and camel size are not handled yet.
+Wagon recipes and the in-world build use TFC materials: lumber, planks, wrought iron, steel, bronze, brass mechanisms, gear boxes, rope, cloth, glue, and TFC lamps in lantern slots. Wheels are crafted at zero durability, can be repaired, and a wheel at zero durability stays fitted and stops the wagon. A barrel placed on the barrel wagon does not open item slots. The log wagon holds a quarter of the usual cargo. It accepts TFC logs, wood, stripped wood, stripped logs, lumber, planks, sticks, and wooden supports.
 
 ## Develop
 
-Java 21. `gradlew.bat compileJava` compiles the mod. Put the built jar in `mods` next to Trotting Wagons Extended and TerraFirmaCraft.
+Java 21. `gradlew.bat jar` builds the mod. Put the jar in `mods` next to Trotting Wagons Extended 0.9.6 and TerraFirmaCraft. The compile also needs BoneHitboxLib, because `BarrelWagon` in 0.9.6 implements one of its types. That library is not a runtime dependency of this jar.

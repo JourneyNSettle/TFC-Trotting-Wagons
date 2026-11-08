@@ -5,7 +5,9 @@ import net.dries007.tfc.common.entities.livestock.TFCAnimalProperties;
 import net.dries007.tfc.config.TFCConfig;
 import net.favouriteless.trotting_wagons.TrottingWagons;
 import net.favouriteless.trotting_wagons.common.entities.WagonBuild;
+import net.favouriteless.trotting_wagons.common.entities.wagons.BarrelWagon;
 import net.favouriteless.trotting_wagons.common.entities.base.AbstractWagon;
+import net.favouriteless.trotting_wagons.common.entities.wagons.LogCargo;
 import net.favouriteless.trotting_wagons.common.init.TWCreativeTabs;
 import net.favouriteless.trotting_wagons.common.init.TWItems;
 import net.minecraft.core.component.DataComponents;
@@ -67,6 +69,8 @@ public class TfcTrottingWagons {
     public TfcTrottingWagons(IEventBus bus, ModContainer container) {
         RECIPE_SERIALIZERS.register(bus);
         ProvidedTfcItems.register(bus);
+        BarrelWagon.setContentsOpen(false);
+        LogCargo.setLimit(LogCargo.CAPACITY / 4);
         AbstractWagon.addDraftCheck(TfcTrottingWagons::hasOutlinedHeart);
         AbstractWagon.setWheelLoss(TfcTrottingWagons::keepBrokenWheel);
         WagonBuild.setChassisBill(

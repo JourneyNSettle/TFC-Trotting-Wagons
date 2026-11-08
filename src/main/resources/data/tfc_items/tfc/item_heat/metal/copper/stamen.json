@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "tag": "c:stamens/copper"
+  },
+  "heat_capacity": 2.848,
+  "forging_temperature":648,
+  "welding_temperature":864
+}

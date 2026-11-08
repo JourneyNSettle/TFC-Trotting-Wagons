@@ -60,11 +60,24 @@ repositories {
         url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
         content { includeGroup('software.bernie.geckolib') }
     }
+    exclusiveContent {
+        forRepository { maven { url = 'https://maven.sighs.cc/repository/maven-public/' } }
+        filter {
+            includeModule('com.kltyton', 'bonehitboxlib-common-1.21.1')
+        }
+    }
+    exclusiveContent {
+        forRepository { maven { url = 'https://raw.githubusercontent.com/Fuzss/modresources/main/maven/' } }
+        filter {
+            includeGroup('fuzs.forgeconfigapiport')
+        }
+    }
 }
 
 dependencies {
     compileOnly 'maven.modrinth:terrafirmacraft:4.2.13'
     compileOnly 'software.bernie.geckolib:geckolib-neoforge-1.21.1:4.8.3'
+    compileOnly 'com.kltyton:bonehitboxlib-common-1.21.1:0.3.0'
     compileOnly files("${System.getenv('USERPROFILE')}/Documents/GitHub/Trotting-Wagons-Extended/build/classes/java/main")
 }
 

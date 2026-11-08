@@ -1,0 +1,1 @@
+{"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"tfc"}],"type":"tfc:anvil","ingredient":{"item":"tfc_items:copper_stamen"},"result":{"id":"tfc_items:copper_screw","count":5},"tier":1,"rules":["hit_any","hit_any","draw_last"]}

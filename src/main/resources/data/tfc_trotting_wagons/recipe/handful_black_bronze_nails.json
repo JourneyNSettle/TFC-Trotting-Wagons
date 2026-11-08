@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["PP", "PP"],
+  "key": { "P": { "tag": "c:nails/black_bronze" } },
+  "result": { "id": "tfc_items:handful_bronze_nails", "count": 1 }
+}

@@ -1,6 +1,9 @@
 {
   "values": [
+    "#c:screws/copper",
     "#c:screws/bronze",
+    "#c:screws/bismuth_bronze",
+    "#c:screws/black_bronze",
     "#c:screws/wrought_iron",
     "#c:screws/steel",
     "#c:screws/black_steel",

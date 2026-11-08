@@ -1,6 +1,9 @@
 {
   "values": [
+    "#c:stamens/copper",
     "#c:stamens/bronze",
+    "#c:stamens/bismuth_bronze",
+    "#c:stamens/black_bronze",
     "#c:stamens/wrought_iron",
     "#c:stamens/steel",
     "#c:stamens/black_steel",

@@ -1,0 +1,1 @@
+{"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"tfc"}],"type":"tfc:anvil","ingredient":{"tag":"c:rods/copper"},"result":{"id":"tfc_items:copper_stamen","count":2},"tier":1,"rules":["bend_last","draw_second_last","draw_third_last"]}

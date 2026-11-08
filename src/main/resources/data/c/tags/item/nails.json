@@ -1,6 +1,9 @@
 {
   "values": [
+    "#c:nails/copper",
     "#c:nails/bronze",
+    "#c:nails/bismuth_bronze",
+    "#c:nails/black_bronze",
     "#c:nails/wrought_iron",
     "#c:nails/steel",
     "#c:nails/black_steel",

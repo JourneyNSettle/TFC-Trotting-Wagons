@@ -29,7 +29,7 @@ license="${mod_license}"
     modId="trotting_wagons"
     type="required"
     mandatory=true
-    versionRange="[0.9.3,)"
+    versionRange="[0.9.6,)"
     ordering="AFTER"
     side="BOTH"
 
