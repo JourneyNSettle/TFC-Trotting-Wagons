@@ -1,0 +1,9 @@
+{
+  "ingredient": [
+    {"tag": "c:nails/handful/steel"},
+    {"tag": "c:screws/handful/steel"}
+  ],
+  "heat_capacity": 0.171,
+  "forging_temperature":924,
+  "welding_temperature":1232
+}

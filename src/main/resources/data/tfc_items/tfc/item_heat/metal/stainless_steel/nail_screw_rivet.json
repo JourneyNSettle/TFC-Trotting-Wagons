@@ -1,0 +1,9 @@
+{"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"firmalife"}],
+  "ingredient": [
+    {"tag": "c:nails/stainless_steel"},
+    {"tag": "c:screws/stainless_steel"}
+  ],
+  "heat_capacity": 0.171,
+  "forging_temperature": 924,
+  "welding_temperature": 1232
+}

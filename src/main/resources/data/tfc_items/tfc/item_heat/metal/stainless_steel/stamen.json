@@ -1,0 +1,8 @@
+{"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"firmalife"}],
+  "ingredient": {
+    "tag": "c:stamens/stainless_steel"
+  },
+  "heat_capacity": 2.848,
+  "forging_temperature": 924,
+  "welding_temperature": 1232
+}

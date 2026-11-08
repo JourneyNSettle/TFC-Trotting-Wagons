@@ -1,0 +1,1 @@
+{"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"firmalife"},{"type":"neoforge:mod_loaded","modid":"tfc"}],"type":"tfc:anvil","ingredient":{"item":"tfc_items:stainless_steel_stamen"},"result":{"id":"tfc_items:stainless_steel_screw","count":5},"tier":4,"rules":["hit_any","hit_any","draw_last"]}

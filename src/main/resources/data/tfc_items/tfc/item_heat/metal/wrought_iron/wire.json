@@ -1,0 +1,9 @@
+{
+  "ingredient": [
+    {"tag": "c:wires/wrought_iron"},
+    {"tag": "c:wires/iron"}
+  ],
+  "heat_capacity": 1.424,
+  "forging_temperature":921,
+  "welding_temperature":1228
+}

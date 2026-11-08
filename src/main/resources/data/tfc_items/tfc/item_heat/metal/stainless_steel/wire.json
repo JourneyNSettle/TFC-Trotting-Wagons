@@ -1,0 +1,8 @@
+{"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"firmalife"}],
+  "ingredient": {
+    "tag": "c:wires/stainless_steel"
+  },
+  "heat_capacity": 1.424,
+  "forging_temperature": 924,
+  "welding_temperature": 1232
+}

@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "tag": "c:stamens/bronze"
+  },
+  "heat_capacity": 2.848,
+  "forging_temperature":570,
+  "welding_temperature":760
+}

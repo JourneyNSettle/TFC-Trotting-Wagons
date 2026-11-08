@@ -1,0 +1,1 @@
+{"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"tfc"}],"type":"tfc:anvil","ingredient":{"item":"tfc_items:wrought_iron_stamen"},"result":{"id":"tfc_items:wrought_iron_screw","count":5},"tier":3,"rules":["hit_any","hit_any","draw_last"]}

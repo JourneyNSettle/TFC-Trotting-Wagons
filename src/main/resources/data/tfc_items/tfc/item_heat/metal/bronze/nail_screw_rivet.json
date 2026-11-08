@@ -1,0 +1,9 @@
+{
+  "ingredient": [
+    {"tag": "c:nails/bronze"},
+    {"tag": "c:screws/bronze"}
+  ],
+  "heat_capacity": 0.171,
+  "forging_temperature":570,
+  "welding_temperature":760
+}

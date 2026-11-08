@@ -21,6 +21,8 @@ import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.Level;
+import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.common.crafting.CompoundIngredient;
 
 /** Shapeless repair. A wheel already at full durability does not match. The hammer stays and loses one use. */
 public final class WheelRepairRecipe implements CraftingRecipe {
@@ -54,6 +56,10 @@ public final class WheelRepairRecipe implements CraftingRecipe {
 
     private static final TagKey<Item> HAMMER_TAG = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "tools/hammer"));
     private static final Ingredient HAMMER = Ingredient.of(HAMMER_TAG);
+    private static final TagKey<Item> STAINLESS_NAILS = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "nails/handful/stainless_steel"));
+    private static final TagKey<Item> STAINLESS_SCREWS = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "screws/handful/stainless_steel"));
+    private static final int BLACK_STEEL_NAIL_RESTORE = 100;
+    private static final int BLACK_STEEL_SCREW_RESTORE = 300;
 
     private final ItemStack wheel;
     private final Ingredient material;
@@ -88,7 +94,7 @@ public final class WheelRepairRecipe implements CraftingRecipe {
                 wheelFound = true;
             } else if(!materialFound && material.test(stack)) {
                 materialFound = true;
-            } else if(!fastenerFound && fastener.test(stack)) {
+            } else if(!fastenerFound && acceptsFastener(stack)) {
                 fastenerFound = true;
             } else if(!hammerFound && HAMMER.test(stack)) {
                 hammerFound = true;
@@ -131,7 +137,7 @@ public final class WheelRepairRecipe implements CraftingRecipe {
         NonNullList<Ingredient> list = NonNullList.create();
         list.add(Ingredient.of(wheel.copy()));
         list.add(material);
-        list.add(fastener);
+        list.add(shownFastener());
         list.add(HAMMER);
         return list;
     }
@@ -155,6 +161,27 @@ public final class WheelRepairRecipe implements CraftingRecipe {
     @Override
     public CraftingBookCategory category() {
         return CraftingBookCategory.MISC;
+    }
+
+    /** Black-steel handfuls, plus stainless handfuls when FirmaLife is installed. */
+    private boolean acceptsFastener(ItemStack stack) {
+        if(fastener.test(stack))
+            return true;
+        if(!ModList.get().isLoaded("firmalife"))
+            return false;
+        if(restore == BLACK_STEEL_NAIL_RESTORE)
+            return stack.is(STAINLESS_NAILS);
+        return restore == BLACK_STEEL_SCREW_RESTORE && stack.is(STAINLESS_SCREWS);
+    }
+
+    private Ingredient shownFastener() {
+        if(!ModList.get().isLoaded("firmalife"))
+            return fastener;
+        if(restore == BLACK_STEEL_NAIL_RESTORE)
+            return CompoundIngredient.of(fastener, Ingredient.of(STAINLESS_NAILS));
+        if(restore == BLACK_STEEL_SCREW_RESTORE)
+            return CompoundIngredient.of(fastener, Ingredient.of(STAINLESS_SCREWS));
+        return fastener;
     }
 
     private static ItemStack usedHammer(ItemStack stack) {

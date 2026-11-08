@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#c:nails/bronze",
+    "#c:nails/wrought_iron",
+    "#c:nails/steel",
+    "#c:nails/black_steel",
+    { "id": "#c:nails/stainless_steel", "required": false }
+  ]
+}

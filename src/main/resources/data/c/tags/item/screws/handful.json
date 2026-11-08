@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#c:screws/handful/bronze",
+    "#c:screws/handful/wrought_iron",
+    "#c:screws/handful/steel",
+    "#c:screws/handful/black_steel",
+    { "id": "#c:screws/handful/stainless_steel", "required": false }
+  ]
+}

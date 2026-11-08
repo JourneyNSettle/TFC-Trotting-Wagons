@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#c:nails/handful/bronze",
+    "#c:nails/handful/wrought_iron",
+    "#c:nails/handful/steel",
+    "#c:nails/handful/black_steel",
+    { "id": "#c:nails/handful/stainless_steel", "required": false }
+  ]
+}

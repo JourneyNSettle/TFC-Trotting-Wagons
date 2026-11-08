@@ -66,6 +66,7 @@ public class TfcTrottingWagons {
 
     public TfcTrottingWagons(IEventBus bus, ModContainer container) {
         RECIPE_SERIALIZERS.register(bus);
+        ProvidedTfcItems.register(bus);
         AbstractWagon.addDraftCheck(TfcTrottingWagons::hasOutlinedHeart);
         AbstractWagon.setWheelLoss(TfcTrottingWagons::keepBrokenWheel);
         WagonBuild.setChassisBill(

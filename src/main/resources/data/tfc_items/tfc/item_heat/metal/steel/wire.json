@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "tag": "c:wires/steel"
+  },
+  "heat_capacity": 1.424,
+  "forging_temperature":924,
+  "welding_temperature":1232
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#c:stamens/bronze",
+    "#c:stamens/wrought_iron",
+    "#c:stamens/steel",
+    "#c:stamens/black_steel",
+    { "id": "#c:stamens/stainless_steel", "required": false }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#c:screws/bronze",
+    "#c:screws/wrought_iron",
+    "#c:screws/steel",
+    "#c:screws/black_steel",
+    { "id": "#c:screws/stainless_steel", "required": false }
+  ]
+}
