@@ -6,6 +6,7 @@ import net.dries007.tfc.config.TFCConfig;
 import net.favouriteless.trotting_wagons.TrottingWagons;
 import net.favouriteless.trotting_wagons.common.entities.WagonBuild;
 import net.favouriteless.trotting_wagons.common.entities.wagons.BarrelWagon;
+import net.favouriteless.trotting_wagons.common.menus.BarrelMenu;
 import net.favouriteless.trotting_wagons.common.entities.base.AbstractWagon;
 import net.favouriteless.trotting_wagons.common.entities.wagons.LogCargo;
 import net.favouriteless.trotting_wagons.common.init.TWCreativeTabs;
@@ -70,6 +71,7 @@ public class TfcTrottingWagons {
         RECIPE_SERIALIZERS.register(bus);
         ProvidedTfcItems.register(bus);
         BarrelWagon.setContentsOpen(false);
+        BarrelMenu.useFlatBarrelRow();
         LogCargo.setLimit(LogCargo.CAPACITY / 4);
         AbstractWagon.addDraftCheck(TfcTrottingWagons::hasOutlinedHeart);
         AbstractWagon.setWheelLoss(TfcTrottingWagons::keepBrokenWheel);
