@@ -1,5 +1,5 @@
 The item models, textures, language names, anvil recipes, crafting recipes, heating data, and item sizes under assets/tfc_items and data/tfc_items are copied from TFC More Items 1.2.1 by sirRobson.
 
-That mod is licensed under the Academic Free License v3.0. Those copied files stay under that license. The rest of TFC Trotting Wagons is All Rights Reserved.
+That mod is licensed under the Academic Free License v3.0. Those copied files stay under that license. The rest of TFC Trotting Wagons is under the MIT license in the LICENSE file.
 
 This mod registers the copied items only when TFC More Items is not installed, using the same item ids.

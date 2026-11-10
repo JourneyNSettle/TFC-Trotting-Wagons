@@ -25,6 +25,10 @@ Recipes and the in-world build use TFC materials: lumber, planks, wrought iron, 
 
 A barrel placed on the barrel wagon does not open item slots. The log wagon holds 1760 items. It accepts TFC logs, wood, stripped wood, stripped logs, lumber, planks, sticks, and wooden supports.
 
+## License
+
+MIT. See `LICENSE`. Models, textures, and recipes copied from TFC More Items stay under the Academic Free License v3.0. See `NOTICE-tfc-more-items.txt`.
+
 ## Develop
 
 Java 21. `gradlew.bat jar` builds the mod. Put the jar in `mods` next to Trotting Wagons Extended 2.0.0 and TerraFirmaCraft. Compiling needs BoneHitboxLib on the classpath, because the wagon classes implement one of its types. That library is not a runtime dependency of this jar.
